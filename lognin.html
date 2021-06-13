@@ -3,56 +3,7 @@
 <head>
   
     <title>Logn in page</title>
-<script>
 
-window.onload=pageLoad;
- function pageLoad(){ 
-
-    	var logninForm = 
-        document.getElementById("logninForm"); 
-        logninForm.onsubmit= validate;
-
-      
-         } 
-         
-function validate(){ 
-	var check = true; 	
-    var finame = document.getElementById("fname").value;
-    var laname = document.getElementById("lname").value; 	
-    var mail = document.getElementById("email").value; 	
-    var telephone = document.getElementById("phone").value; 	
-    var password = document.getElementById("pass").value; 	 	
-    
-    
-    if (!finame.match(/^[A-Za-z ]+$/)){ //space------------------------------ 		
-        alert("only letters or space allowed in name field"); 		
-        check= false; 	
-        } 	
-    if (!laname.match(/^[A-Za-z ]+$/)){ //space------------------------------ 		
-        alert("only letters or space allowed in name field"); 		
-        check= false; 	
-        } 	   
-    if (!mail.match(/^[a-zA-z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/)){ 		
-        alert("Email is Not Valid"); 		
-        check=false; 	
-        } 	
-    if (!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,8}$/)){ 		
-        alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least"); 		
-        check=false; 	
-        } 	 	
-    if (!telephone.match(/[0-9]{3}-[0-9]{3}-[0-9]{4}/)){ 				
-        alert("Phone is not valid"); 		
-        check=false; 	
-        } 	
-    
-       
-        return check; 
-    }
-
-
-
-
-</script>    
 <style>
     
     body{
@@ -208,6 +159,7 @@ input[type=submit]:hover {
 }
 
 </style> 
+	</head>
 <body>
     <div class="cover"> 
         <div class="inner">
@@ -291,6 +243,61 @@ input[type=submit]:hover {
       </div>
     </form>
   </div>
+	
+	<script>
+
+window.onload=pageLoad;
+ function pageLoad(){ 
+
+    	var logninForm = 
+        document.getElementById("logninForm"); 
+        logninForm.onsubmit= validate;
+
+      
+         } 
+         
+function validate(){ 
+	var ch = 1; 	
+    var finame = document.getElementById("fname").value;
+    var laname = document.getElementById("lname").value; 	
+    var mail = document.getElementById("email").value; 	
+    var telephone = document.getElementById("phone").value; 	
+    var password = document.getElementById("pass").value; 	 	
+    
+    
+    if (!finame.match(/^[A-Za-z ]+$/)){ //space------------------------------ 		
+        alert("only letters or space allowed in name field"); 		
+        ch++; 	
+        } 	
+    if (!laname.match(/^[A-Za-z ]+$/)){ //space------------------------------ 		
+        alert("only letters or space allowed in name field"); 		
+        ch++; 	
+        } 	   
+    if (!mail.match(/^[a-zA-z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/)){ 		
+        alert("Email is Not Valid"); 		
+        ch++; 	
+        } 	
+    if (!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,8}$/)){ 		
+        alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least"); 		
+        ch++; 	
+        } 	 	
+    if (!telephone.match(/[0-9]{3}-[0-9]{3}-[0-9]{4}/)){ 				
+        alert("Phone is not valid"); 		
+        ch++; 	
+        } 	
+    
+       if(ch==1){
+         alert("Thank you");       }
+       else{
+         alert("Please, try again");
+       }
+
+    }
+
+
+
+
+</script>    
 </body>   
-</head>    
+    
 </html>
