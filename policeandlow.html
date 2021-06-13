@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Police and low books</title>  
+<style>
+    html{
+    scroll-behavior: smooth;
+  }
+body{
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+}
+hr{
+    border-bottom: 1px solid rgb(10, 9, 34);
+}
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(10, 9, 34);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+.nav a:hover:not(.active){
+    background-color: rgb(22, 21, 49);
+}
+.active{
+    background-color: rgb(45, 45, 59);
+}
+
+    
+.content li a{
+    text-decoration: none;
+    color: white;
+}
+.content li a:hover{
+    color: rgb(152, 150, 194);
+}
+.name{
+    width: 25%;
+    height: 5000px;
+    position: fixed;
+    background-color: rgb(53, 51, 92);
+    float: left;
+    overflow: hidden;
+}
+.name h1{
+    margin-left: 35px;
+    margin-top: -25px;
+}
+.name li{
+    line-height: 1.8;
+    font-size: 25px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img{
+    width:75%;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 11%;
+    border: 1px solid black;
+}
+img:hover{
+    border: 1px solid rgb(78, 152, 236);
+}
+.one1{
+    margin-top: 20px;
+}
+.inner img{
+    width:25%;
+    height: 250px;
+    top: 0;
+    margin-left: 10px;
+    border: 1px solid black;
+    display:block;
+    
+}
+.inner h2{
+    margin-top: 0;
+   padding: 10px;
+   display:block;
+}
+.inner h3{
+    line-height: 1.8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.namo{
+    font-size: 35px;
+    padding-left:35px;
+    color: white;
+    margin-top: 5px;
+}
+
+
+.info{
+    float: left;
+    background-color: #bec2f5;
+    width: 73%;
+    margin-left: 25%;
+    padding: 1%;
+    height:auto;
+   }
+.info:after {
+  content: "";
+  display: table;
+  clear: both;
+   }
+ 
+.inner li{
+    margin: 10px;
+    font-size: 20px;
+}
+   @media  screen and (max-width:1000px) {
+       .name , .info{
+           width: 100%;
+            }
+        .name{
+            position: static;
+            height: auto;
+        } 
+        .info{
+            margin-left: 0;
+        } 
+        .nav, .nav li{
+      float: none;
+    }
+    .nav{
+        position: unset;
+    }
+        
+       
+   }
+</style>    
+</head> 
+<body>
+
+    <ul class="nav">
+        <li><a  href="Homepage.html">Home</a></li>
+        <li><a class="active" href="Categories.html">Categories</a></li>
+        <li><a href="Whybooks.html">Why reading</a></li>
+        <li><a href="vs.html">Books VS Novels</a></li>
+        <li><a href="lognin.html">Logn in</a></li>
+    </ul> 
+
+
+   <div class="row">
+    <div class="name">
+        <img src="rom.jpg" alt="myphoto">
+        <p class="namo">Books about police and low</p>
+        
+
+        <h1>CONTENT:</h1>
+
+<ul class="content">
+    <li><a href="#one">COP: A True Story</a></li>
+    <li><a href="#two">Cadet Blues</a></li>
+    <li><a href="#three">The A. B. C. Murders </a></li>
+    <li><a href="#four">The Mousetrap</a></li>
+    <li><a href="#five">Sleeping Murder </a></li>
+
+
+</ul>
+</div>
+
+<div class="info">
+    <div class="inner">
+        <div class="one1">
+        <h2>1.COP: A True Story by Michael Middleton</h2>
+        <img src="onee.jpg" alt="one" id="one">
+        <h3>In this brutally honest portrait, Sergeant Michael Middleton, a retired veteran of the LAPD, tells the gripping tale of his two decades on some of America's meanest streets.</h3>
+       </div>
+<hr  id="two">
+       <div class="one1">
+        <h2>2.Cadet Blues by Rob Krider </h2>
+        <img src="twoo.jpg" alt="two">
+        <h3>Cadet Blues details author Rob Krider’s misadventures while attending the California Highway Patrol Academy.<br> This hilarious book is all too real, and it’s a great read for anyone thinking about attending a law enforcement academy or someone who is nostalgic about their academy days.</h3>
+       </div>
+
+       <hr  id="three">
+       <div class="one1">
+        <h2>3.The A. B. C. Murders by Agatha Christie </h2>
+        <img src="threee.jpg" alt="three">
+        <h3>This book breaks with Christie's usual style with a string of murders with seemingly random victims. Basically every serial killer novel where a detective tries to figure out how the victims are connected exists because this book did it first. </h3>
+       </div>
+
+       <hr  id="four">
+       <div class="one1">
+        <h2>4.The Mousetrap by Agatha Christie</h2>
+        <img src="fourr.jpg" alt="four">
+        <h3>The scene is set when a group of people gathered in a country house cut off by the snow discover, to their horror, that there is a murderer in their midst. Who can it be? One by one the suspicious characters reveal their sordid pasts until at the last, nerve-shredding moment the identity and the motive are finally revealed.</h3>
+       </div>
+
+       <hr  id="five">
+       <div class="one1">
+        <h2>5.Sleeping Murder by Agatha Christie</h2>
+        <img src="fivee.jpg" alt="five">
+        <h3>Soon after Gwenda moved into her new home, odd things started to happen. Despite her best efforts to modernize the house, she only succeeded in dredging up its past. Worse, she felt an irrational sense of terror every time she climbed the stairs.</h3>
+       </div>
+     
+
+     
+</div>
+</div>
+</body>   
+</html>

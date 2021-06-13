@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Romantic books</title>
+<style>
+    html{
+    scroll-behavior: smooth;
+  }
+body{
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+}
+hr{
+    border-bottom: 1px solid rgb(10, 9, 34);
+}
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(10, 9, 34);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+.nav a:hover:not(.active){
+    background-color: rgb(22, 21, 49);
+}
+.active{
+    background-color: rgb(45, 45, 59);
+}
+.content li a{
+    text-decoration: none;
+    color: white;
+}
+.content li a:hover{
+    color: rgb(152, 150, 194);
+}
+.name{
+    width: 25%;
+    height: 5000px;
+    position: fixed;
+    background-color: rgb(53, 51, 92);
+    float: left;
+    overflow: hidden;
+}
+.name h1{
+    margin-left: 35px;
+}
+.name li{
+    line-height: 1.8;
+    font-size: 25px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img{
+    width:75%;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 11%;
+    border: 1px solid black;
+}
+img:hover{
+    border: 1px solid rgb(78, 152, 236);
+}
+.one1{
+    margin-top: 20px;
+}
+.inner img{
+    width:25%;
+    height: 250px;
+    top: 0;
+    margin-left: 10px;
+    border: 1px solid black;
+    display:block;
+    
+}
+.inner h2{
+    margin-top: 0;
+   padding: 10px;
+   display:block;
+}
+.inner h3{
+    line-height: 1.8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.namo{
+    font-size: 35px;
+    padding-left:35px;
+    color: white;
+    margin-top: 5px;
+}
+
+
+.info{
+    float: left;
+    background-color: #bec2f5;
+    width: 73%;
+    margin-left: 25%;
+    padding: 1%;
+    height:auto;
+   }
+.info:after {
+  content: "";
+  display: table;
+  clear: both;
+   }
+ 
+.inner li{
+    margin: 10px;
+    font-size: 20px;
+}
+   @media  screen and (max-width:1000px) {
+       .name , .info{
+           width: 100%;
+            }
+        .name{
+            position: static;
+            height: auto;
+        } 
+        .info{
+            margin-left: 0;
+        } 
+        .nav, .nav li{
+      float: none;
+    }
+    .nav{
+        position: unset;
+    }
+        
+       
+   }
+</style>    
+</head> 
+<body>
+
+    <ul class="nav">
+        <li><a  href="Homepage.html">Home</a></li>
+        <li><a class="active" href="Categories.html">Categories</a></li>
+        <li><a href="Whybooks.html">Why reading</a></li>
+        <li><a href="vs.html">Books VS Novels</a></li>
+        <li><a href="lognin.html">Logn in</a></li>
+    </ul> 
+
+
+   <div class="row">
+    <div class="name">
+        <img src="rom.jpg" alt="myphoto">
+        <p class="namo">Romantic Books</p>
+        
+
+        <h1>CONTENT:</h1>
+
+<ul class="content">
+    <li><a href="#one">Pride and Prejudice</a></li>
+    <li><a href="#two">Morning Glory</a></li>
+    <li><a href="#three">Lord of Scoundrels</a></li>
+    <li><a href="#four">Bet Me</a></li>
+    <li><a href="#five">Devil In Winter </a></li>
+
+
+</ul>
+</div>
+
+<div class="info">
+    <div class="inner">
+        <div class="one1">
+        <h2>1.Pride and Prejudice by Jane Austen (1813)</h2>
+        <img src="one.jpg" alt="one" id="one">
+        <h3>Arguably the greatest romance novel of all time, Austen's Pride and Prejudice follows the opinionated heroine, Elizabeth Bennet, as she frequently finds herself at odds with her beau, the uptight Mr. Darcy.<br> In 2006, Keira Knightley earned an Oscar nomination for her portrayal of Bennet on the big screen.</h3>
+       </div>
+<hr  id="two">
+       <div class="one1">
+        <h2>2.Morning Glory by Lavyrle Spencer (1993)</h2>
+        <img src="two.jpg" alt="two">
+        <h3>This classic tearjerker by Spencer takes place in small town Whitney, Georgia on the eve of World War II. Will Parker is trying to evade the bad luck that comes with his damning reputation.<br> So when he sees a "Wanted" ad in the paper written by a young widowed mother of two (who's also pregnant with her third child) looking for a husband, it seems that Will finally has an answer to his troubles.</h3>
+       </div>
+
+       <hr  id="three">
+       <div class="one1">
+        <h2>3.Lord of Scoundrels by Loretta Chase (1995)</h2>
+        <img src="three.jpg" alt="three">
+        <h3>Notorious sinner Sebastian Ballister, Marquess of Dain, revels in his reputation as an unapologetic scoundrel. And he's perfectly content to live as such—until he comes across Jessica Trent. She's smart and head strong, determined to save her troubled brother from ruin, but she has to cross Sebastian to do so.</h3>
+       </div>
+
+       <hr  id="four">
+       <div class="one1">
+        <h2>4.Bet Me by Jennifer Crusie (2005)</h2>
+        <img src="four.jpg" alt="four">
+        <h3>Winner of a 2005 RITA Award, the bestselling Bet Me follows Minerva and Calvin. She's jaded and completely convinced that true love is a fairy tale, and he asked her out to win a bet with her ex. Unbeknownst to Cal, Min is fully aware of his wager—and she uses it to her advantage. </h3>
+       </div>
+
+       <hr  id="five">
+       <div class="one1">
+        <h2>5.Devil In Winter by Lisa Kleypas (2006)</h2>
+        <img src="five.jpg" alt="five">
+        <h3>In order to distance herself from her problematic family, the shy Evie is able to get London's most notorious playboy and viscount to agree to a marriage of convenience.<br> And since their union wasn't exactly a love match, Evie is determined to win over Sebastian by agreeing to sleep with him, if he can just remain celibate for three months.<br> What develops is a consuming connection that proves to be a worthy opponent when an enemy from Evie's past re-appears.<br> Though this is Kleypas's third book in her "The Wallflowers" series, it's the favorite amongst many of her fans.</h3>
+       </div>
+     
+
+     
+</div>
+</div>
+</body>   
+</html>

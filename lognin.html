@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Logn in page</title>
+<script>
+
+window.onload=pageLoad;
+ function pageLoad(){ 
+
+    	var logninForm = 
+        document.getElementById("logninForm"); 
+        logninForm.onsubmit= validate;
+
+      
+         } 
+         
+function validate(){ 
+	var check = true; 	
+    var finame = document.getElementById("fname").value;
+    var laname = document.getElementById("lname").value; 	
+    var mail = document.getElementById("email").value; 	
+    var telephone = document.getElementById("phone").value; 	
+    var password = document.getElementById("pass").value; 	 	
+    
+    
+    if (!finame.match(/^[A-Za-z ]+$/)){ //space------------------------------ 		
+        alert("only letters or space allowed in name field"); 		
+        check= false; 	
+        } 	
+    if (!laname.match(/^[A-Za-z ]+$/)){ //space------------------------------ 		
+        alert("only letters or space allowed in name field"); 		
+        check= false; 	
+        } 	   
+    if (!mail.match(/^[a-zA-z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/)){ 		
+        alert("Email is Not Valid"); 		
+        check=false; 	
+        } 	
+    if (!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,8}$/)){ 		
+        alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least"); 		
+        check=false; 	
+        } 	 	
+    if (!telephone.match(/[0-9]{3}-[0-9]{3}-[0-9]{4}/)){ 				
+        alert("Phone is not valid"); 		
+        check=false; 	
+        } 	
+    
+       
+        return check; 
+    }
+
+
+
+
+</script>    
+<style>
+    
+    body{
+        background-color: #bec2f5;
+        height: auto;
+      font-family: fantasy;
+    }
+ .cover{
+     background-image: url(cov.jpg);
+     height: 400px;
+     background-repeat: no-repeat;
+      
+     background-size: cover;
+     opacity: 0.8;
+
+}
+.inner{
+    text-align: center;
+    padding-top: 130px;
+    padding-right: 400px;
+    border: 1px solid transparent;
+}
+.name{
+    font-family: fantasy;
+    font-size: 150px;
+    font-weight: bold;
+    color: rgb(16, 15, 48);
+    text-shadow: 5px 5px 10px rgb(10, 9, 34);
+    text-shadow: 2px 2px 4px #505050;
+}
+.namo{
+    font-family: fantasy;
+    font-size: 35px ;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgb(10, 9, 34);
+    text-shadow: 2px 2px 4px #505050;
+   
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(10, 9, 34);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+a:hover:not(.active){
+    background-color: rgb(22, 21, 49);
+}
+.active{
+    background-color: rgb(45, 45, 59);
+}
+
+input[type=text], select, textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 25px;
+  color:rgb(10, 9, 34) ;
+}
+
+input[type=submit] {
+  background-color: rgb(10, 9, 34);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: fantasy;
+  font-size: 25px;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(22, 21, 49);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width:700px){
+    .inner{
+        width: 100%;
+        padding-right: 0;
+    }
+    .name{
+        font-size: 76px;
+    }
+    .namo{
+        font-size: 28px;
+    }
+    ul,li{
+        float: none;
+    }
+    ul{
+        position: unset;
+        width: 100%;
+    }
+}
+
+</style> 
+<body>
+    <div class="cover"> 
+        <div class="inner">
+        
+            <span class="name">YourBook.com</span>
+   <div class="namo"> Check out the latest books, their authors, and more</div> 
+                   
+        </div>
+            </div>
+            
+ <ul>
+     <li><a  href="Homepage.html">Home</a></li>
+     <li><a href="Categories.html">Categories</a></li>
+     <li><a href="Whybooks.html">Why reading</a></li>
+     <li><a href="vs.html">Books VS Novels</a></li>
+     <li><a class="active" href="lognin.html">Logn in</a></li>
+ </ul>  
+   
+ <div class="container">
+    <form id="logninform" onsubmit="validate()" action="" >
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="address">Address</label>
+        </div>
+        <div class="col-75">
+          <textarea id="address" name="address" placeholder="Write your address.." style="height:auto;" ></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+            <label for="email">Enter your email:</label>
+        </div>
+        <div class="col-75">
+           <input type="email" id="email" name="email" placeholder="E-mail.." >
+        </div>
+      </div>
+    <div class="row">
+        <div class="col-25">
+           <label for="pass">Password </label>
+        </div>
+        <div class="col-75">
+           <input type="password" id="pass" name="password" size="8" >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+              <label for="phone">Enter a phone number</label>
+        </div>
+        <div class="col-75">
+           <input type="phone" id="phone" name="phone" placeholder="phone number.." >
+        </div>
+      </div>
+    <div class="row">
+        <div class="col-25"><label for="gender">Gender</label><br>
+        </div>
+        <div class="col-75">
+          <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+      </div>
+    </form>
+  </div>
+</body>   
+</head>    
+</html>

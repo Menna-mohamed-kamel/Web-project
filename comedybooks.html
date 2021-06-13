@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Cmedy books</title>   
+<style>
+    html{
+    scroll-behavior: smooth;
+  }
+body{
+    padding: 0;
+    margin: 0;
+    font-family: fantasy;
+}
+hr{
+    border-bottom: 1px solid rgb(10, 9, 34);
+}
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(10, 9, 34);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+.nav a:hover:not(.active){
+    background-color: rgb(22, 21, 49);
+}
+.active{
+    background-color: rgb(45, 45, 59);
+}
+.content li a{
+    text-decoration: none;
+    color: white;
+}
+.content li a:hover{
+    color: rgb(152, 150, 194);
+}
+.name{
+    width: 25%;
+    height: 5000px;
+    position: fixed;
+    background-color: rgb(53, 51, 92);
+    float: left;
+    overflow: hidden;
+}
+.name h1{
+    margin-left: 35px;
+}
+.name li{
+    line-height: 1.8;
+    font-size: 25px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img{
+    width:75%;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 11%;
+    border: 1px solid black;
+}
+img:hover{
+    border: 1px solid rgb(78, 152, 236);
+}
+.one1{
+    margin-top: 20px;
+}
+.inner img{
+    width:25%;
+    height: 250px;
+    top: 0;
+    margin-left: 10px;
+    border: 1px solid black;
+    display:block;
+    
+}
+.inner h2{
+    margin-top: 0;
+   padding: 10px;
+   display:block;
+}
+.inner h3{
+    line-height: 1.8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.namo{
+    font-size: 35px;
+    padding-left:35px;
+    color: white;
+    margin-top: 5px;
+}
+
+
+.info{
+    float: left;
+    background-color: #bec2f5;
+    width: 73%;
+    margin-left: 25%;
+    padding: 1%;
+    height:auto;
+   }
+.info:after {
+  content: "";
+  display: table;
+  clear: both;
+   }
+ 
+.inner li{
+    margin: 10px;
+    font-size: 20px;
+}
+   @media  screen and (max-width:1000px) {
+       .name , .info{
+           width: 100%;
+            }
+        .name{
+            position: static;
+            height: auto;
+        } 
+        .info{
+            margin-left: 0;
+        } 
+        .nav, .nav li{
+      float: none;
+    }
+    .nav{
+        position: unset;
+    }
+        
+       
+   }
+</style>    
+</head> 
+<body>
+
+    <ul class="nav">
+        <li><a  href="Homepage.html">Home</a></li>
+        <li><a class="active" href="Categories.html">Categories</a></li>
+        <li><a href="Whybooks.html">Why reading</a></li>
+        <li><a href="vs.html">Books VS Novels</a></li>
+        <li><a href="lognin.html">Logn in</a></li>
+    </ul> 
+
+
+   <div class="row">
+    <div class="name">
+        <img src="rom.jpg" alt="myphoto">
+        <p class="namo">Romantic Books</p>
+        
+
+        <h1>CONTENT:</h1>
+
+<ul class="content">
+    <li><a href="#one">Thunderbolt Kid</a></li>
+    <li><a href="#two">Tristram Shandy</a></li>
+    <li><a href="#three">Then We Came To The End</a></li>
+    <li><a href="#four">The Idiot</a></li>
+    <li><a href="#five">The Adulterants </a></li>
+
+
+</ul>
+</div>
+
+<div class="info">
+    <div class="inner">
+        <div class="one1">
+        <h2>1.The Life and Times of the Thunderbolt Kid by Bill Bryson (2006)</h2>
+        <img src="o.jpg" alt="one" id="one">
+        <h3>I had come to loath Bill Bryson, but on holiday a couple of years ago The Life and Times of the Thunderbolt Kid was the only book around. After three pages I was laughing aloud. When was the last time a book made me do that? Actually, 1989, The Lost Continent, Bryson's first book. In between, he had become hugely successful, but his books were increasingly lazy, stuffed with stereotypes, and crushingly formulaic: cosy chuckles for tedious old farts.
+
+            The Thunderbolt Kid captures the hilarious innocence of a time when men had flat-top hair cuts that left them "looking as if they were prepared in emergencies to provide landing spots for some very small experimental aircraft". There was an unbridled enthusiasm for all things atomic (from cocktails to motels and, of course, bombs) and unending culinary innovation, (spray-on mayonnaise, frozen salads, liquid instant coffee in a spray can).</h3>
+       </div>
+<hr  id="two">
+       <div class="one1">
+        <h2>2.The Life and Opinions of Tristram Shandy by Laurence Sterne (1759)</h2>
+        <img src="t.jpg" alt="two">
+        <h3>Tristram Shandy is a lesson to stand-up comedians in keeping a joke going: it's basically an incredibly protracted shaggy-dog tale, or 'cock-and-bull story' (to quote the title of the film version, which I was planning to hate on principle, except it turned out to be pretty good).
+
+            The joke is that Tristram (the narrator) keeps trying to tell the story of his life, but keeps getting distracted by millions of other thoughts, and goes off into so many digressions that the author Laurence Sterne pretty much died while he was still writing it.</h3>
+       </div>
+
+       <hr  id="three">
+       <div class="one1">
+        <h2>3.Then We Came To The End by Joshua Ferris (2007)</h2>
+        <img src="th.jpg" alt="three">
+        <h3>Extract: "Jim Jackers was hard at work on the pro bono ads and had been working on them steadily for a few hours, since his return from helping Chris Yop throw his chair into Lake Michigan. Looking up from the blank page to the blinking clock, he discovered it was only three-fifteen. He decided that today was perhaps the longest day of his life. Not only had he been called an idiot to his face, but he could do nothing to counter that opinion, because he couldn't come up with even a single funny thing to say about breast cancer."</h3>
+       </div>
+
+       <hr  id="four">
+       <div class="one1">
+        <h2>4.The Idiot by Elif Batuman (2017)</h2>
+        <img src="f.jpg" alt="four">
+        <h3>One of the many staggering feats of New Yorker writer Elif Batuman’s sophomore novel is that, despite it detailing the love life of student Selin and a bunch of her equally self-absorbed peers studying at Harvard in the Nineties, you don’t want to throw it across the room. How can young people droning on about linguistics and dropping Russian literary references into every second sentence not be unbearable? Because of Batuman’s deft ability to undercut her characters’ pretentiousness at just the right time – and with observations that are honest and funny, but never mean – so that you can root for them right to the end.</h3>
+       </div>
+
+       <hr  id="five">
+       <div class="one1">
+        <h2>5.The Adulterants by Joe Dunthorne (2018)</h2>
+        <img src="fi.jpg" alt="five">
+        <h3>There are some writers who, you sense, can write humorously only through self-torture; you can practically hear the painful tweaking and tuning of every line. And there are others for whom funniness just seems to spread across the page like a wash of watercolour, almost like they haven’t had to try. With his perfect balance of lightness and control, the British novelist and poet Joe Dunthorne is certainly among the latter, as his 2018 novel about a couple trying to get on the property ladder during the 2011 London riots reminds us. We’re not saying it’s actually as easy as he makes it look, but he pretty near has us fooled.</h3>
+       </div>
+     
+
+     
+</div>
+</div>
+</body>   
+</html>
