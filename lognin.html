@@ -277,7 +277,7 @@ function validate(){
         ch++; 	
         } 	
     if (!password.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,8}$/)){ 		
-        alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least"); 		
+        alert("Password is Not Valid, It must contain 8 characters: start with uppercase, one lowercase, one number and one special character at least"); 		
         ch++; 	
         } 	 	
     if (!telephone.match(/^[0-9]{11}$/)){ 				
