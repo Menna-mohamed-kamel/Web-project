@@ -280,7 +280,7 @@ function validate(){
         alert("Password is Not Valid, It must contain 8 characters: 1 uppercase, one lowercase, one number and one special character at least"); 		
         ch++; 	
         } 	 	
-    if (!telephone.match(/[0-9]{3}-[0-9]{3}-[0-9]{4}/)){ 				
+    if (!telephone.match(/^[0-9]{11}$/)){ 				
         alert("Phone is not valid"); 		
         ch++; 	
         } 	
