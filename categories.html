@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Categories page</title>
 <style>
     body{
         background-color: #bec2f5;
         height:auto;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: fantasy;
     }
  .cover{
      background-image: url(cov.jpg);
@@ -68,36 +71,45 @@ ul a:hover:not(.active){
     background-color: white;
     padding: 30px;
     margin: 10px;
-    height: 800px;
+    height: 700px;
 }
 div.gallery {
-  margin: 20px;
-  border: 1px solid rgb(0, 0, 0);
-  float: left;
-  width: 350px;
-  cursor: pointer;
+  border: 1px solid #ccc;
 }
 
 div.gallery:hover {
-  border: 1px solid rgb(119, 115, 209);
+  border: 1px solid #777;
 }
 
 div.gallery img {
   width: 100%;
-  height: 250px;
+  height: auto;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
-  margin-top: 0;
-  font-family: fantasy;
 }
 div.gallery a{
     text-decoration: none;
 }
-@media screen and (max-width:1200px){
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 20px;
+  float: left;
+  width: 30%;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+@media screen and (max-width:1000px){
    
+  .responsive {
+    width: 100%;
+    margin: 6px 0;
+  } 
   .inner{
         width: 100%;
         padding-right: 0;
@@ -109,16 +121,12 @@ div.gallery a{
         font-size: 28px;
     }
     .cat{
-        height: 2100px;
+        height: 1700px;
         margin: 10px;
         padding: 30px;
         
     }
-    div.galary{
-        height: 500px;
-      width: 100%;
-      margin: -3px;
-    }
+   
     
     ul, li{
       float: none;
@@ -126,6 +134,7 @@ div.gallery a{
     ul{
         position: unset;
     }
+   
 }
 
 </style> 
@@ -141,57 +150,76 @@ div.gallery a{
             </div>
             </div>
  <ul>
-     <li><a  href="index.html">Home</a></li>
-     <li><a class="active" href="categories.html">Categories</a></li>
-     <li><a href="whybooks.html">Why reading</a></li>
+     <li><a  href="Homepage.html">Home</a></li>
+     <li><a class="active" href="Categories.html">Categories</a></li>
+     <li><a href="Whybooks.html">Why reading</a></li>
      <li><a href="vs.html">Books VS Novels</a></li>
      <li><a href="lognin.html">Logn in</a></li>
  </ul> 
- 
  <div class="cat">
-    <div class="gallery">
-        <a target="_blank" href="romanticbooks.html">
-          <img src="rom.jpg" alt="romantic">
-        </a>
-        <div class="desc">Romantic books</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="_blank" href="policeandlow.html">
-          <img src="police.jpg" alt="poice" >
-        </a>
-        <div class="desc">Books about police and low</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="_blank" href="comedybooks.html">
-          <img src="com.jpg" alt="comedy" >
-        </a>
-        <div class="desc">Comedy books</div>
-      </div>
-      
-      <div class="gallery">
-        
-          <img src="fic.png" alt="fiction" >
-        
-        <div class="desc">fictional books</div>
-      </div>
+  <div class="responsive">
+ <div class="gallery">
+       <a target="_blank" href="romanticbooks.html">
+         <img src="rom.jpg" alt="romantic"  height="400"
+   >
+       </a>
+       <div class="desc">Romantic books</div>
+     </div>
+</div>
 
-      <div class="gallery">
-        
-          <img src="sca.jpg" alt="scary" >
-      
-        <div class="desc">Horror books</div>
-      </div>
-      
-      <div class="gallery">
-        
-          <img src="hisfic.jpg" alt="history" >
-        
-        <div class="desc">Historical fiction books</div>
-      </div>
-
- </div>
+<div class="responsive">
+   <div class="gallery">
+       <a target="_blank" href="policeandlow.html">
+         <img src="police.jpg" alt="poice"  height="400"
+   >
+       </a>
+       <div class="desc">Books about police and low</div>
+     </div></div>
+     <div class="responsive">
+       <div class="gallery">
+             <a target="_blank" href="comedybooks.html">
+               <img src="com.jpg" alt="comedy"  height="400"
+         >
+             </a>
+             <div class="desc">Comedy books</div>
+           </div>
+     </div>
+     
+     <div class="responsive">
+         <div class="gallery">
+             
+               <img src="fic.png" alt="fiction" height="400"
+         >
+             
+             <div class="desc">fictional books</div>
+           </div>
+     </div>
+     
+     <div class="responsive">
+       
+           <div class="gallery">
+             
+               <img src="sca.jpg" alt="scary"  height="400"
+         >
+           
+             <div class="desc">Horror books</div>
+           </div>
+     </div>
+     
+     
+     <div class="responsive">
+       
+             <div class="gallery">
+             
+               <img src="hisfic.jpg" alt="history" height="400"
+         >
+             
+             <div class="desc">Historical fiction books</div>
+           </div>
+     </div>
+     
+     </div>
+         
      
 </body>   
 </head>    
